@@ -5,6 +5,10 @@ import discord
 from discord.ext import commands
 import os
 import asyncio
+from dotenv import load_dotenv
+
+load_dotenv()
+token = os.getenv("BOT_TOKEN")
 
 intents = discord.Intents.default()
 intents.members = True  # Permite acesso aos eventos de membros, como "on_member_join"
@@ -31,5 +35,5 @@ async def load_cogs():
 if __name__ == "__main__":
     async def main():
         await load_cogs()
-        await bot.start("seu token aqui")
+        await bot.start(token)
     asyncio.run(main())
