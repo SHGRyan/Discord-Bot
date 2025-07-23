@@ -14,7 +14,7 @@ class Bemvindomsg(commands.Cog):
         embed = discord.Embed(
 
             title=(f"👋 ***Bem-vindo ao servidor oficial da SmartHelp!*** {member}"),
-            description=(f"📌 Este é o seu ponto de apoio técnico confiável. Atuamos com suporte remoto especializado para empresas de pequeno e médio porte, oferecendo soluções rápidas e eficientes em diversas áreas da tecnologia.\n💡 O que você encontrará aqui:\n• Atendimento 24h com técnicos qualificados\n• Suporte com instalação e manutenção de sistemas\n• Diagnósticos e análises completas de hardware e software\n• Suporte em linguagens de programação e sistemas web\n• Atendimentos via Discord, AnyDesk, WhatsApp e site\n🔒 Importante: Antes de utilizar nossos serviços, acesse os canais <>, <#1359718322194878606>, <#1354533606994870347> e <#1360069286122750023> para se informar e configurar seu acesso corretamente.\n✅ Primeiro atendimento é gratuito. Aproveite para conhecer nosso modelo de suporte!\nSeja muito bem-vindo(a)! Estamos prontos para ajudar. 🚀"),
+            description=(f"Seja bem vindo ao nosso servidor!✅"),
            
             color=discord.Color.blue()
         )
