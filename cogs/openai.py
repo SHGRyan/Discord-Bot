@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import openai
 import os
+from dotenv import load_dotenv
 
 def cargos_permitidos(*nomes): 
     def check(ctx):
@@ -11,6 +12,8 @@ def cargos_permitidos(*nomes):
 class Gpt(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        
+        load_dotenv()
         openai.api_key = os.getenv("OPENAI_KEY")
 
     @commands.command()
