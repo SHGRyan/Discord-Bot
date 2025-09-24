@@ -11,6 +11,7 @@ class Hora(commands.Cog):
      try:
        print("Alguem usou o comando !hora")
        data_hora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+       
        embed = discord.Embed(
        title="***Data e Hora Atual***",
        description="📆 Mostrando a data e hora atual:",
