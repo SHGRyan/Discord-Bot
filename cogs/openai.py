@@ -23,7 +23,7 @@ class Gpt(commands.Cog):
         await ctx.send("💭 Pensando...")
         try:
             response = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4-turbo",
                 messages=[
                     {"role": "system", "content": "Você é um assistente útil no Discord."}, #aqui você coloca o foco que vc desejar para sua IA. Você contextualiza ele.
                     {"role": "user", "content": pergunta}
