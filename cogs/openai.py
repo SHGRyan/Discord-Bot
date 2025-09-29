@@ -17,7 +17,7 @@ class Gpt(commands.Cog):
         openai.api_key = os.getenv("OPENAI_KEY")
 
     @commands.command()
-    @cargos_permitidos("💜Staff", "📞Atendentes", "✍️Assinantes", "🛠️ Técnico Discord", "🧑‍💻Técnico Developer", "🔧Técnico OS", "🖥️Técnico de Hardware")
+    @cargos_permitidos("💜Staff", "📞Atendentes", "🛠️ Técnico Discord", "🧑‍💻Técnico Developer", "🔧Técnico OS", "🖥️Técnico de Hardware")
     async def ia(self, ctx, *, pergunta: str):
         print("alguem usou a ia.")
         await ctx.send("💭 Pensando...")
